@@ -1,0 +1,65 @@
+.sidemenu-container {
+    width: 10%;
+    height: 10%;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    border-right: 2px solid #cfcccc;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 5px;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.item p {
+
+    width: 50%;
+    word-wrap: break-word; /* Cambiado a word-wrap para que funcione correctamente */
+    display: flex;
+    gap: 5px;
+    font-size: 25px;
+    padding: 5px;
+    transition: transform 0.2s;
+}
+
+.item p:hover {
+    transform: scale(1.02); /* Efecto de escala al pasar el ratón */
+    background-color: aquamarine;;
+}
+
+img {
+    width: 40px; /* Ancho de la imagen */
+    height: 40px; /* Alto de la imagen */
+    padding: 0px;
+}
+.image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border:1px solid blueviolet ;
+}
+.btn {
+    border: 1px solid black;
+    width: 50%;
+    padding: 10px;
+    border-radius: 50px;
+    transition: transform 0.2s;
+    background-color: purple;
+    color: white;
+}
+.btn:hover {
+    transform: scale(1.02); /* Efecto de escala al pasar el ratón */
+    background-color: orange;
+    border-radius: 50px;
+}
+
+

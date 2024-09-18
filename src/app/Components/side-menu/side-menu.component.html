@@ -1,0 +1,23 @@
+<button (click)="alternateVisibility()"></button>
+<section class="sidemenu-container"
+[style.background-color]="theme"
+[style.width]="widthMenu + '%'"
+[style.display]="visibleMenu ? 'flex' : 'none'"
+>
+<div class="container">
+    <div class="item">
+        <img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlTVenD4fe6IChN_STxqohf5lxi_pZPZX3XA&s" alt="">
+        <p >{{userName}}</p>
+        <button (click)="alternateVisibility()"><img src="https://cdn-icons-png.flaticon.com/512/17/17699.png" alt=""></button>
+    </div>
+    <div class="item">
+        <p> <span>☺</span> Dashboard</p>   
+    </div>
+    <div class="item">
+        <p> <span>♣</span> Profile
+        </p>    
+    </div>
+    <button class="btn" (click)="setTheme('grey')">Change Theme</button>        <button class="btn" (click)="setSize()">Change size</button>      
+</div>
+
+
